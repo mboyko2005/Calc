@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Экран отображения -->
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#EEEEEE"
+        android:gravity="end|center_vertical"
+        android:padding="10dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="36sp" />
+
+    <!-- ListView для отображения истории -->
+    <ListView
+        android:id="@+id/lvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#F9F9F9"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Сетка кнопок -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginTop="16dp">
+
+        <!-- Первая строка -->
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/CalculatorButton"
+            android:layout_columnSpan="3"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/CalculatorButton"
+            android:text="/" />
+
+        <!-- Вторая строка -->
+        <Button
+            android:id="@+id/btn7"
+            style="@style/CalculatorButton"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/CalculatorButton"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/CalculatorButton"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            style="@style/CalculatorButton"
+            android:text="*" />
+
+        <!-- Третья строка -->
+        <Button
+            android:id="@+id/btn4"
+            style="@style/CalculatorButton"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/CalculatorButton"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/CalculatorButton"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            style="@style/CalculatorButton"
+            android:text="-" />
+
+        <!-- Четвертая строка -->
+        <Button
+            android:id="@+id/btn1"
+            style="@style/CalculatorButton"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/CalculatorButton"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/CalculatorButton"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/CalculatorButton"
+            android:text="+" />
+
+        <!-- Пятая строка -->
+        <Button
+            android:id="@+id/btn0"
+            style="@style/CalculatorButton"
+            android:layout_columnSpan="2"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnDot"
+            style="@style/CalculatorButton"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btnEqual"
+            style="@style/CalculatorButton"
+            android:text="=" />
+    </GridLayout>
+
+</LinearLayout>
